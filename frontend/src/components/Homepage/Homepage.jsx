@@ -25,7 +25,7 @@ export default function Homepage() {
       const filtered = allBooks.filter((book) => {
         // In case match returns true which will take & In case not match return false which will not take
         for (let key in filterBy) {
-          if (book[key]?.toLowerCase().includes(filterBy[key].toLowerCase())) {
+          if (book[key]?.toLowerCase().includes(filterBy[key]?.toLowerCase())) {
             return true;
           }
         }

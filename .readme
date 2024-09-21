@@ -1,0 +1,29 @@
+Stack used in project 
+•	Backend : Golang 
+•	Frontend : react 
+•	Database : postgresql (Docker)
+
+Clone Project from https://github.com/hirensavani-99/inventory-Management.git
+it has two folder backend and frontend which are responsible for task as name suggest 
+
+Steps to run Project
+Run Database 
+•	Database used in the system is Postgresql in the docker , here are the steps to run db 
+1.	Install Docker 
+2.	Set up postgresql in docker 
+3.	Visit provided backend folder and change necessary data in docker-compose.yml file , that file already has my data , use it as an exemplary data.
+
+After taking this steps docker container can be built with docker-compose up –build which will build container and run it.
+•	Please find the Postgresql script  in Backend/db/schema.sql 
+
+setting Up Backend
+Backend is developed in Golang 
+•	Go to backend folder
+1.	Run Go mod tidy  will install necessary dependency 
+2.	Go to backend/db/database.go file and update necessary details , host , port ,etc…
+3.	Run go run .  will run application and server on port 8080
+Setting Up frontend 
+Frontend is done with React 
+•	Go to frontend folder 
+1.	Run npm install will install dependency necessary for the project 
+2.	Run npm start will server application on port localhost:3000
